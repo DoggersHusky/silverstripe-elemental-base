@@ -1,0 +1,7 @@
+---
+Name: buckleshusky-elemental-base
+---
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - BucklesHusky\ElementalBase\Extensions\BaseElemetExt
+
