@@ -1,0 +1,5 @@
+.element {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 25px 0;
+}
