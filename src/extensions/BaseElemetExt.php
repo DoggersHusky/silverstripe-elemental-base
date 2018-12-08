@@ -48,15 +48,15 @@ class BaseElemetExt extends DataExtension {
                 'BackgroundColour',
                 'Background Colour',
                 array(
-                    'White' => '#fff',
-                    'Black' => '#000',
-                    'Orange' => '#ff6c00',
-                    'Green' => '#83c909',
-                    'Blue' => '#43adff',
-                    'Pink' => '#ff5fa3',
-                    'LightOrange' => '#fc9e38',
-                    'OffBlue' => '#00b3c1',
-                    'Purple' => '#ff276e'
+                    '#fff' => '#fff',
+                    '#000' => '#000',
+                    '#ff6c00' => '#ff6c00',
+                    '#83c909' => '#83c909',
+                    '#43adff' => '#43adff',
+                    '#ff5fa3' => '#ff5fa3',
+                    '#fc9e38' => '#fc9e38',
+                    '#00b3c1' => '#00b3c1',
+                    '#ff276e' => '#ff276e'
                 )
             )
         );
