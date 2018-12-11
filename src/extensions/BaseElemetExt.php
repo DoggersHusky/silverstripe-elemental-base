@@ -44,7 +44,7 @@ class BaseElemetExt extends DataExtension {
             )
         );
         
-        $fields->addFieldsToTab('Root.Main', array(
+        $fields->addFieldsToTab('Root.Settings', array(
             CheckboxField::create('RemoveTopPadding', 'Remove bottom padding?'),
             CheckboxField::create('RemoveBottomPadding', 'Remove top padding?')
         ));
