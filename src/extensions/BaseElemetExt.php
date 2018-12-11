@@ -22,6 +22,8 @@ class BaseElemetExt extends DataExtension {
         'MarginBottom' => 'Boolean',
         'AddBorderBottom' => 'Boolean',
         'BorderBottomColour' => 'Text',
+        'RemoveBottomPadding' => 'Boolean',
+        'RemoveTopPadding' => 'Boolean'
     ];
     
     private static $has_one = [
@@ -41,6 +43,11 @@ class BaseElemetExt extends DataExtension {
                 CheckboxField::create('MarginBottom', 'Add margin to the bottom of this element?')      
             )
         );
+        
+        $fields->addFieldsToTab('Root.Main', array(
+            CheckboxField::create('RemoveTopPadding', 'Remove bottom padding?'),
+            CheckboxField::create('RemoveBottomPadding', 'Remove top padding?')
+        ));
         
         $fields->addFieldToTab(
             'Root.Settings',
