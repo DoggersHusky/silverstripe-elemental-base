@@ -36,7 +36,6 @@ class BaseElemetExt extends DataExtension {
     
     public function updateCMSFields(FieldList $fields) {
         
-        $fields->addFieldToTab('Root.Settings', CheckboxField::create('EnableBackgroundColour','Enable Background Colour?'));
         
         $fields->addFieldsToTab('Root.Settings', array(
                 CheckboxField::create('MarginTop', 'Add margin to the top of this element?'),
@@ -45,9 +44,11 @@ class BaseElemetExt extends DataExtension {
         );
         
         $fields->addFieldsToTab('Root.Settings', array(
-            CheckboxField::create('RemoveTopPadding', 'Remove bottom padding?'),
-            CheckboxField::create('RemoveBottomPadding', 'Remove top padding?')
+            CheckboxField::create('RemoveTopPadding', 'Remove top padding?'),
+            CheckboxField::create('RemoveBottomPadding', 'Remove bottom padding?')
         ));
+        
+        $fields->addFieldToTab('Root.Settings', CheckboxField::create('EnableBackgroundColour','Enable Background Colour?'));
         
         $fields->addFieldToTab(
             'Root.Settings',
